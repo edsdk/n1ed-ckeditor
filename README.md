@@ -5,6 +5,9 @@ Most of JS+ add-ons are included in the N1ED.
 N1ED plugin for CKEditor 4 lets you to easily try N1ED with your editor.
 
 ## Installation
+
+First copy ```N1ED``` directory into ```ckeditor/plugins/``` and then:
+
 ### If you use config.js
 Add this line into your "config.js" file to activate N1ED. All futhur job will be done by it.
 ```
