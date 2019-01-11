@@ -9,7 +9,7 @@ N1ED plugin for CKEditor 4 lets you to easily try N1ED with your editor.
 First copy ```N1ED``` directory into ```ckeditor/plugins/``` and then:
 
 ### If you use config.js
-Add this line into your "config.js" file to activate N1ED. All futhur job will be done by it.
+Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
 ```
 config.extraPlugins = "N1ED";
 ```
