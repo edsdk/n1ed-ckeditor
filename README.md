@@ -5,17 +5,17 @@ Main features:
 - Adds many new widgets to CKEditor
 - Configure CKEditor, N1ED and other add-ons visually using Dashboard
 - Easy integrations with:
-- - Bootstrap Editor
-- - File Manager
-- - Image Editor
-- - other ecosystem plugins enabled in Dashboard
+    - Bootstrap Editor
+    - File Manager
+    - Image Editor
+    - other ecosystem plugins enabled in Dashboard
 - Mobile simulation feature and gives you content preview in different display resolutions
 - Advanced breadcrumbs integrated with powerful widget editing system
 - Useful fullscreen mode
 - 3 UI modes:
-- - Classic mode with floating sidebar for editing widgets
-- - Fullscreen-only mode to focus on your content
-- - Dialogs mode like all other plugins which offer to edit widgets in a dialogs
+    - Classic mode with floating sidebar for editing widgets
+    - Fullscreen-only mode to focus on your content
+    - Dialogs mode like all other plugins which offer to edit widgets in a dialogs
 - Always auto updated using CDN
 
 N1ED add-on and Dashboard are absolutely free.
