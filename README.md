@@ -5,17 +5,17 @@ Main features:
 - Adds many new widgets to CKEditor
 - Configure CKEditor, N1ED and other add-ons visually using Dashboard
 - Easy integrations with:
-  -- Bootstrap Editor
-  -- File Manager
-  -- Image Editor
-  -- other ecosystem plugins enabled in Dashboard
+- - Bootstrap Editor
+- - File Manager
+- - Image Editor
+- - other ecosystem plugins enabled in Dashboard
 - Mobile simulation feature and gives you content preview in different display resolutions
 - Advanced breadcrumbs integrated with powerful widget editing system
 - Useful fullscreen mode
 - 3 UI modes:
-  -- Classic mode with floating sidebar for editing widgets
-  -- Fullscreen-only mode to focus on your content
-  -- Dialogs mode like all other plugins which offer to edit widgets in a dialogs
+- - Classic mode with floating sidebar for editing widgets
+- - Fullscreen-only mode to focus on your content
+- - Dialogs mode like all other plugins which offer to edit widgets in a dialogs
 - Always auto updated using CDN
 
 N1ED add-on and Dashboard are absolutely free.
@@ -28,13 +28,13 @@ You will have such file path as result: ```ckeditor/plugins/n1ed/plugin.js```.
 
 ### If you use ```config.js```
 Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
-```
+```js
 config.extraPlugins = "n1ed";
 ```
 
 ### If you use initialization script
 When you pass parameters to CKEditor 4 manually as function argument, do the same but inside config structure:
-```
+```js
 CKEDITOR.replace(
   "#editor",
   {
@@ -52,7 +52,7 @@ You can change this configuration as many times you want and it will be automati
 
 When you've changed your configuration in Dashboard once please make sure you updated the API key in your CKEditor configuration like:
 
-```
+```js
 config.apiKey = "APIKEY12";
 ```
 
