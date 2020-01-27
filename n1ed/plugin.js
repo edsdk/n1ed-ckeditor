@@ -17,9 +17,13 @@
 //   VISUAL CONFIGURATION
 //
 //   If you want to configure all N1ED add-ons visually,
-//   just go into your dashboard at:
+//   just go into your Dashboard at:
 //
 //       https://n1ed.com/dashboard
+//
+//   Once configured N1ED using Dashboard please set your personal API key to use it:
+//
+//      config.apiKey = "APIKEY12";
 //
 
 

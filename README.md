@@ -47,8 +47,14 @@ CKEDITOR.replace(
 
 N1ED being installed is ready to run without any configuration.
 If you want to change preferences, use free [Dashboard](https://n1ed.com/dashboard) to edit configuration visually.
+
 You can change this configuration as many times you want and it will be automatically applied to your add-on instance linked to it.
-All instructions you can find inside Dashboard.
+
+When you've changed your configuration in Dashboard once please make sure you updated the API key in your CKEditor configuration like:
+
+```
+config.apiKey = "APIKEY12";
+```
 
 
 ## Bonus: skin for CKEditor
