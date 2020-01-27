@@ -1,17 +1,35 @@
-N1ED - powerful HTML WYSIWYG editor for your website. Based on CKEditor it cardinally improves it beyond recognition.
-It supports Drupal 7 and 8, WordPress and Joomla 3, has online Dashboard and perfect Bootstrap 4 support.
-Most of JS+ add-ons are included in the N1ED.
+[N1ED](https://n1ed.com) is a free plugin for CKEditor 4 making level-up for your editor.
 
-N1ED plugin for CKEditor 4 lets you to easily try N1ED with your editor.
+Main features:
+
+- Adds many new widgets to CKEditor
+- Configure CKEditor, N1ED and other add-ons visually using Dashboard
+- Easy integrations with:
+  -- Bootstrap Editor
+  -- File Manager
+  -- Image Editor
+  -- other ecosystem plugins enabled in Dashboard
+- Mobile simulation feature and gives you content preview in different display resolutions
+- Advanced breadcrumbs integrated with powerful widget editing system
+- Useful fullscreen mode
+- 3 UI modes:
+  -- Classic mode with floating sidebar for editing widgets
+  -- Fullscreen-only mode to focus on your content
+  -- Dialogs mode like all other plugins which offer to edit widgets in a dialogs
+- Always auto updated using CDN
+
+N1ED add-on and Dashboard are absolutely free.
+
 
 ## Installation
 
-First copy ```N1ED``` directory into ```ckeditor/plugins/``` and then:
+Copy ```n1ed``` directory into ```ckeditor/plugins/```.
+You will have such file path as result: ```ckeditor/plugins/n1ed/plugin.js```.
 
-### If you use config.js
+### If you use ```config.js```
 Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
 ```
-config.extraPlugins = "N1ED";
+config.extraPlugins = "n1ed";
 ```
 
 ### If you use initialization script
@@ -20,7 +38,21 @@ When you pass parameters to CKEditor 4 manually as function argument, do the sam
 CKEDITOR.replace(
   "#editor",
   {
-     extraPlugins: "N1ED"
+     extraPlugins: "n1ed"
   }
 );
 ```
+
+## Configuration
+
+N1ED being installed is ready to run without any configuration.
+If you want to change preferences, use free [Dashboard](https://n1ed.com/dashboard) to edit configuration visually.
+You can change this configuration as many times you want and it will be automatically applied to your add-on instance linked to it.
+All instructions you can find inside Dashboard.
+
+
+## Bonus: skin for CKEditor
+
+In order to make your CKEditor more beautiful and similar with N1ED we prepared the special skin for CKEditor called N1Theme.
+
+You can [download N1Theme](https://ckeditor.com/cke4/addon/n1theme) and use it for free.

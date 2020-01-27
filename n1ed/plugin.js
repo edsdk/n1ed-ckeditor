@@ -1,0 +1,35 @@
+/*!
+ * Add-on for including N1ED into your CKEditor 4
+ * Developer: N1ED
+ * Website: https://n1ed.com/
+ * License: GPL v3
+ */
+
+
+//
+//   HOW TO INSTALL THIS ADD-ON
+//
+//   1. Copy the plugin as "ckeditor/plugins/n1ed/plugin.js"
+//   2. Add "n1ed" into "extraPlugins" config option
+//   3. Done!
+//
+//
+//   VISUAL CONFIGURATION
+//
+//   If you want to configure all N1ED add-ons visually,
+//   just go into your dashboard at:
+//
+//       https://n1ed.com/dashboard
+//
+
+
+var apiKey = CKEDITOR.config.apiKey || "CKEDDFLT";
+CKEDITOR.plugins.addExternal(
+    "N1EDEco",
+    "http://local.cloud.n1ed.com/cdn/" + apiKey + "/latest/ckeditor/plugins/N1EDEco/plugin.js"
+);
+CKEDITOR.plugins.add( "n1ed", {
+    "requires": ["N1EDEco"], // We can not move N1EDEco in this file due to we need to dynamically
+                             // embed configuration from your Dashboard into it.
+                             // So N1EDEco add-on can be loaded only from CDN
+});
