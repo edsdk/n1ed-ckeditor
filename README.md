@@ -29,7 +29,7 @@ You will have such file path as result: ```ckeditor/plugins/n1ed/plugin.js```.
 ### If you use ```config.js```
 Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
 ```
-config.extraPlugins = "n1ed";
+config.extraPlugins = "N1ED-editor";
 ```
 
 ### If you use initialization script
@@ -38,7 +38,7 @@ When you pass parameters to CKEditor 4 manually as function argument, do the sam
 CKEDITOR.replace(
   "#editor",
   {
-     extraPlugins: "n1ed"
+     extraPlugins: "N1ED-editor"
   }
 );
 ```

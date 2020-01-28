@@ -32,7 +32,7 @@ CKEDITOR.plugins.addExternal(
     "N1EDEco",
     "http://local.cloud.n1ed.com/cdn/" + apiKey + "/latest/ckeditor/plugins/N1EDEco/plugin.js"
 );
-CKEDITOR.plugins.add( "n1ed", {
+CKEDITOR.plugins.add( "N1ED-editor", {
     "requires": ["N1EDEco"], // We can not move N1EDEco in this file due to we need to dynamically
                              // embed configuration from your Dashboard into it.
                              // So N1EDEco add-on can be loaded only from CDN
