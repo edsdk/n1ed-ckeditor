@@ -23,8 +23,8 @@ N1ED add-on and Dashboard are absolutely free.
 
 ## Installation
 
-Copy ```n1ed``` directory into ```ckeditor/plugins/```.
-You will have such file path as result: ```ckeditor/plugins/n1ed/plugin.js```.
+Copy ```N1ED-editor``` directory into ```ckeditor/plugins/```.
+You will have such file path as result: ```ckeditor/plugins/N1ED-editor/plugin.js```.
 
 ### If you use ```config.js```
 Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
