@@ -30,7 +30,7 @@
 var apiKey = CKEDITOR.config.apiKey || "CKEDDFLT";
 CKEDITOR.plugins.addExternal(
     "N1EDEco",
-    "http://local.cloud.n1ed.com/cdn/" + apiKey + "/latest/ckeditor/plugins/N1EDEco/plugin.js"
+    "https://cloud.n1ed.com/cdn/" + apiKey + "/latest/ckeditor/plugins/N1EDEco/plugin.js"
 );
 CKEDITOR.plugins.add( "N1ED-editor", {
     "requires": ["N1EDEco"], // We can not move N1EDEco in this file due to we need to dynamically
