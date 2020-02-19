@@ -1,3 +1,5 @@
+![alt tag](https://n1ed.com/img/screenshots/docs/addons/n1ed/n1ed.jpg "Edit articles with N1ED")​
+
 [N1ED](https://n1ed.com) is a free plugin for CKEditor 4 making level-up for your editor.
 
 Main features:
@@ -45,6 +47,8 @@ CKEDITOR.replace(
 
 N1ED being installed is ready to run without any configuration.
 If you want to change preferences, use free [Dashboard](https://n1ed.com/dashboard) to edit configuration visually.
+
+![alt tag](https://n1ed.com/img/screenshots/docs/addons/n1ed/n1ed-configuration.png "N1ED configuration")​
 
 You can change this configuration as many times you want and it will be automatically applied to your add-on instance linked to it.
 
