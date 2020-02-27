@@ -27,7 +27,16 @@
 //
 
 
-var apiKey = CKEDITOR.config.apiKey || "CKEDDFLT";
+var apiKey = CKEDITOR.config.apiKey;
+for (var i=0; i<Object.keys(CKEDITOR.instances).length; i++) {
+    var id = Object.keys(CKEDITOR.instances)[i];
+    if (CKEDITOR.instances[id].config.apiKey)
+        apiKey = CKEDITOR.instances[id].config.apiKey;
+}
+if (!apiKey)
+    apiKey = "CKEDDFLT";
+
+
 CKEDITOR.plugins.addExternal(
     "N1EDEco",
     "https://cloud.n1ed.com/cdn/" + apiKey + "/latest/ckeditor/plugins/N1EDEco/plugin.js"
