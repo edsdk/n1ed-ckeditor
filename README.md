@@ -49,6 +49,7 @@ N1ED being installed is ready to run without any configuration.
 If you want to change preferences, use free [Dashboard](https://n1ed.com/dashboard) to edit configuration visually.
 
 |[![N1ED configuration](https://n1ed.com/img/screenshots/docs/widgets/config-editor/config-editor-plugins-788.png)​](https://n1ed.com)|
+-
 
 You can change this configuration as many times you want and it will be automatically applied to your add-on instance linked to it.
 
