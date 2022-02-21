@@ -25,12 +25,17 @@ N1ED add-on and Dashboard are absolutely free.
 
 ## Installation
 
-Copy ```N1ED-editor``` directory into ```ckeditor/plugins/```.
-You will have such file path as result: ```ckeditor/plugins/N1ED-editor/plugin.js```.
+Copy `N1ED-editor` directory into `ckeditor/plugins/`.
+You will have such file path as result: `ckeditor/plugins/N1ED-editor/plugin.js`.
 
-### If you use ```config.js```
-Add this line into your "config.js" file to activate N1ED. All futher job will be done by it.
+### If you use `config.js`
+Add this line into your "config.js" file to activate N1ED:
+
+```js
 config.extraPlugins = "N1ED-editor";
+```
+
+All further job will be done by N1ED.
 
 ### If you use initialization script
 When you pass parameters to CKEditor 4 manually as function argument, do the same but inside config structure:
@@ -64,3 +69,7 @@ config.apiKey = "APIKEY12";
 In order to make your CKEditor more beautiful and similar with N1ED we prepared the special skin for CKEditor called N1Theme.
 
 You can [download N1Theme](https://ckeditor.com/cke4/addon/n1theme) and use it for free.
+
+## Support
+
+Please feel free to ask any questions regarding installation or using sending a letter to [support e-mail](support@n1ed.zendesk.com).
