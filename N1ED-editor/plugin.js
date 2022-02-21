@@ -53,14 +53,14 @@ for (var i=0; i<Object.keys(CKEDITOR.instances).length; i++) {
 
 // Cookies may contain data for development purposes (which version to load, from where, etc.).
 function getCookie(name) {
-    var value = `; ${document.cookie}`;
-    var parts = value.split(`; ${name}=`);
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + name + '=');
     if (parts.length === 2)
         return parts.pop().split(';').shift();
     else
         return null;
 }
-apiKey = getCookie("N1ED_APIKEY") || apiKey || "CKEDDFLT";
+apiKey = getCookie("N1ED_APIKEY") || apiKey || window.N1ED_API_KEY || "CKEDDFLT";
 n1edHttps = (getCookie("N1ED_HTTPS") === "false" || n1edHttps === false) ? false : true;
 n1edPrefix = getCookie("N1ED_PREFIX") || n1edPrefix || null;
 n1edHttpsApp = (getCookie("N1ED_HTTPS_APP") === "false" || n1edHttpsApp === false) ? false : true;
