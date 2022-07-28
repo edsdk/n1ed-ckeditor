@@ -1,6 +1,20 @@
+<p align="center">
+    <a href="https://n1ed.com/"><img src="https://n1ed.com/img/favicons/favicon-64x64.png" alt="N1ED" /></a>
+</p>
+
+<h1 align="center">N1ED</h1>
+
+<p align="center">
+    <strong>Create your content block by block using N1ED page builder.</strong>
+</p>
+
+<p align="center">
+    <a href="https://n1ed.com/">Home page</a> ∙ <a href="https://n1ed.com/doc/install-ckeditor-plugin/">Install</a> ∙ <a href="https://n1ed.com/demo/">Try Online</a>
+</p>
+
 [![Edit articles with N1ED](https://n1ed.com/img/screenshots/docs/addons/n1ed/n1ed.jpg)](https://n1ed.com)
 
-## [N1ED](https://n1ed.com) is a free plugin for CKEditor 4 making level-up for your editor
+## N1ED is a free plugin for CKEditor 4 making level-up for your editor
 
 ### Main features:
 
