@@ -86,4 +86,4 @@ You can [download N1Theme](https://ckeditor.com/cke4/addon/n1theme) and use it f
 
 ## Support
 
-Please feel free to ask any questions regarding installation or using sending a letter to [support e-mail](support@n1ed.zendesk.com).
+Please feel free to ask any questions regarding installation or using sending a letter to [support e-mail](support@helpdesk.edsdk.com).
