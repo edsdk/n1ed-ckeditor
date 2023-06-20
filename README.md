@@ -12,7 +12,7 @@
     <a href="https://n1ed.com/">Home page</a> ∙ <a href="https://n1ed.com/doc/install-ckeditor-plugin/">Install</a> ∙ <a href="https://n1ed.com/demo/">Try Online</a>
 </p>
 
-[![Edit articles with N1ED](https://n1ed.com/img/screenshots/docs/addons/n1ed/n1ed.jpg)](https://n1ed.com)
+[![Edit articles with N1ED](https://n1ed.com/img/index/main-screenshot.jpg)](https://n1ed.com)
 
 ## N1ED is a free plugin for CKEditor 4 making level-up for your editor
 
@@ -86,4 +86,4 @@ You can [download N1Theme](https://ckeditor.com/cke4/addon/n1theme) and use it f
 
 ## Support
 
-Please feel free to ask any questions regarding installation or using sending a letter to [support e-mail](support@helpdesk.edsdk.com).
+Please feel free to ask any questions regarding installation or using sending a letter to [support e-mail](mailto:support@helpdesk.edsdk.com).
