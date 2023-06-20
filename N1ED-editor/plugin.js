@@ -62,7 +62,8 @@ function getCookie(name) {
     else
         return null;
 }
-apiKey = getCookie("N1ED_APIKEY") || apiKey || window.N1ED_API_KEY || "CKEDFLM2";
+window.CKEDITOR_OVERRIDE_API_KEY_PARAM = "OVERRIDE_API_KEY";
+apiKey = getCookie("N1ED_APIKEY") || apiKey || window.OVERRIDE_API_KEY || window.N1ED_API_KEY || "N1EDMDRN";
 n1edHttps = (getCookie("N1ED_HTTPS") === "false" || n1edHttps === false) ? false : true;
 n1edPrefix = getCookie("N1ED_PREFIX") || n1edPrefix || null;
 n1edHttpsApp = (getCookie("N1ED_HTTPS_APP") === "false" || n1edHttpsApp === false) ? false : true;
