@@ -69,8 +69,8 @@ n1edPrefix = getCookie("N1ED_PREFIX") || n1edPrefix || null;
 n1edHttpsApp = (getCookie("N1ED_HTTPS_APP") === "false" || n1edHttpsApp === false) ? false : true;
 n1edPrefixApp = getCookie("N1ED_PREFIX_APP") || n1edPrefixApp || null;
 protocol = n1edHttps ? "https" : "http";
-host = (n1edPrefix ? (n1edPrefix + ".") : "") + "cloud.n1ed.com";
-version = getCookie("N1ED_VERSION") || version || "latest";
+var host = (n1edPrefix ? (n1edPrefix + ".") : "") + "cloud.n1ed.com";
+var version = getCookie("N1ED_VERSION") || version || "latest";
 
 if (!urlCache) {
     window.N1ED_PREFIX = n1edPrefix;
