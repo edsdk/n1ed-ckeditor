@@ -83,7 +83,7 @@ var urlPlugin = (
     urlCache ? (urlCache + apiKey + "/" + version) : (protocol + "://" + host + "/cdn/" + apiKey + "/" + version)
 ) + "/ckeditor/plugins/N1EDEco/plugin.js";
 
-let oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
+var oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
 window.CKEDITOR.scriptLoader.load = function(scriptUrl, callback, scope, showBusy) {
     return oldScriptLoaderLoad.apply(scope, [
         scriptUrl,
