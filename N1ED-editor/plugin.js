@@ -33,6 +33,7 @@ var n1edHttps = CKEDITOR.config.n1edHttps;
 var n1edPrefixApp = CKEDITOR.config.n1edPrefixApp;
 var n1edHttpsApp = CKEDITOR.config.n1edHttpsApp;
 var urlCache = CKEDITOR.config.urlCache;
+window.n1edPluginVersion=202308001;
 for (var i=0; i<Object.keys(CKEDITOR.instances).length; i++) {
     var id = Object.keys(CKEDITOR.instances)[i];
     if (CKEDITOR.instances[id].config.apiKey)
