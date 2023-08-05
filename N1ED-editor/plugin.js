@@ -90,9 +90,27 @@ window.CKEDITOR.scriptLoader.load = function(scriptUrl, callback, scope, showBus
         scriptUrl,
         function(completed, failed) {
             if (!!failed && failed.length) {
-                console.error( '[CKEDITOR.resourceManager.load] Resource was not found at "' + failed[ 0 ] );
+                console.error( '[CKEDITOR.resourceManager.load] Resource was not found at "' + failed[0] );
+
+                for (var i=0; i<failed.length; i++) {
+                    var m = failed[i].match(/^https?:\/\/cloud\.n1ed.com\/cdn\/[^/]+?\/[^/]+?\/ckeditor\/plugins\/([^/]+?)\/plugin\.js.*?/);
+                    if (m != null) {
+                        var pluginName = m[1];
+                        console.log("Using a stub for '" + pluginName + "' plugin");
+                        CKEDITOR.plugins.add(pluginName, {});
+                        if (!completed)
+                            completed = [];
+                        completed.push(failed[i]);
+                    }
+                }
                 failed = [];
             }
+
+            var elsLoaders = document.querySelectorAll(".n1ed_loading");
+            if (!!elsLoaders)
+                for (var i=0; i<elsLoaders.length; i++)
+                    elsLoaders.item(i).parentElement.removeChild(elsLoaders.item(i));
+
             callback.apply(scope, [completed, failed]);
         },
         scope,
