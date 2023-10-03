@@ -31,7 +31,7 @@
     var PLUGIN_NAME = "N1ED-editor";
     var DEFAULT_API_KEY = "N1EDMDRN";
 
-    window.n1edPluginVersion=202308001;
+    window.n1edPluginVersion=202310001;
 
     function get(varName, defaultValue) {
         if (window[varName] !== undefined)
