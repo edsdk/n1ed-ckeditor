@@ -31,7 +31,7 @@
     var PLUGIN_NAME = "N1ED-editor";
     var DEFAULT_API_KEY = "N1EDMDRN";
 
-    window.n1edPluginVersion=202310002;
+    window.n1edPluginVersion=202310003;
 
     function get(varName, defaultValue) {
         if (window[varName] !== undefined && window[varName] !== "-")
@@ -59,7 +59,7 @@
     var protocol = n1edHttps ? "https" : "http";
 
     var host = (n1edPrefix ? (n1edPrefix + ".") : "") + "cdn.edsdk.com";
-    var urlPlugin = protocol + "://" + host + "/a/" + apiKey + "/plugins/Ecosystem/plugin.js";
+    var urlPlugin = protocol + "://" + host + "/a/" + apiKey + "/plugins/N1EDEco/plugin.js";
 
     var oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
     window.CKEDITOR.scriptLoader.load = function(scriptUrl, callback, scope, showBusy) {
@@ -99,9 +99,9 @@
         ]);
     };
 
-    CKEDITOR.plugins.addExternal("Ecosystem", urlPlugin);
+    CKEDITOR.plugins.addExternal("N1EDEco", urlPlugin);
     CKEDITOR.plugins.add( PLUGIN_NAME, {
-        "requires": ["Ecosystem"], // We can not move Ecosystem in this file due to we need to dynamically
+        "requires": ["N1EDEco"], // We can not move Ecosystem in this file due to we need to dynamically
                                    // embed configuration from your Dashboard into it.
                                    // So Ecosystem add-on can be loaded only from CDN
     });
