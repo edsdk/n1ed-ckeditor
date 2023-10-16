@@ -31,7 +31,7 @@
     var PLUGIN_NAME = "N1ED-editor";
     var DEFAULT_API_KEY = "N1EDMDRN";
 
-    window.n1edPluginVersion=202310003;
+    window.n1edPluginVersion=202310004;
 
     function get(varName, defaultValue) {
         if (window[varName] !== undefined && window[varName] !== "-")
@@ -58,7 +58,7 @@
 
     var protocol = n1edHttps ? "https" : "http";
 
-    var host = (n1edPrefix ? (n1edPrefix + ".") : "") + "cdn.edsdk.com";
+    var host = (n1edPrefix ? (n1edPrefix + ".") : "") + "cloud.n1ed.com";
     var urlPlugin = protocol + "://" + host + "/a/" + apiKey + "/plugins/N1EDEco/plugin.js";
 
     var oldScriptLoaderLoad = window.CKEDITOR.scriptLoader.load;
@@ -73,7 +73,7 @@
                         var m = failed[i].match(/^https?:\/\/cloud\.n1ed\.com\/cdn\/[^/]+?\/[^/]+?\/ckeditor\/plugins\/([^/]+?)\/plugin\.js.*?/);
 
                         if (!m) {
-                            m = failed[i].match(/^https?:\/\/cdn\.n1ed\.com\/v\/[^/]+?\/plugins\/([^/]+?)\/plugin\.js.*?/);
+                            m = failed[i].match(/^https?:\/\/cloud\.n1ed\.com\/.*\/plugin\.js.*?/);
                         }
                         if (m != null) {
                             var pluginName = m[1];
