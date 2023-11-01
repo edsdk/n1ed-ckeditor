@@ -31,7 +31,7 @@
     var PLUGIN_NAME = "N1ED-editor";
     var DEFAULT_API_KEY = "N1EDMDRN";
 
-    window.n1edPluginVersion=202310004;
+    window.n1edPluginVersion=202311001;
 
     function get(varName, defaultValue) {
         if (window[varName] !== undefined && window[varName] !== "-")
@@ -41,12 +41,16 @@
     }
 
     var apiKey = CKEDITOR.config.apiKey;
-    for (var i=0; i<Object.keys(CKEDITOR.instances).length; i++) {
-        var id = Object.keys(CKEDITOR.instances)[i];
-        if (CKEDITOR.instances[id].config.apiKey)
-            apiKey = CKEDITOR.instances[id].config.apiKey;
-        else if (CKEDITOR.instances[id].config.Flmngr && CKEDITOR.instances[id].config.Flmngr.apiKey)
-            apiKey = CKEDITOR.instances[id].config.Flmngr.apiKey;
+    if (!apiKey) {
+        for (var i = 0; i < Object.keys(CKEDITOR.instances).length; i++) {
+            var id = Object.keys(CKEDITOR.instances)[i];
+            if (CKEDITOR.instances[id].config.apiKey)
+                apiKey = CKEDITOR.instances[id].config.apiKey;
+            if (!apiKey) {
+                if (CKEDITOR.instances[id].config.Flmngr && CKEDITOR.instances[id].config.Flmngr.apiKey)
+                    apiKey = CKEDITOR.instances[id].config.Flmngr.apiKey;
+            }
+        }
     }
 
     window.CKEDITOR_OVERRIDE_API_KEY_PARAM = "OVERRIDE_API_KEY";
