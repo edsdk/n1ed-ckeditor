@@ -39,20 +39,27 @@ N1ED add-on and Dashboard are absolutely free.
 
 ## Installation
 
-Copy `N1ED-editor` directory into `ckeditor/plugins/`.
-You will have such file path as result: `ckeditor/plugins/N1ED-editor/plugin.js`.
+Copy the plugin into
+
+```
+  ckeditor/
+    plugins/
+      N1ED-editor/
+        plugin.js
+```
 
 ### If you use `config.js`
+
 Add this line into your "config.js" file to activate N1ED:
 
 ```js
 config.extraPlugins = "N1ED-editor";
 ```
 
-All further job will be done by N1ED.
-
 ### If you use initialization script
+
 When you pass parameters to CKEditor 4 manually as function argument, do the same but inside config structure:
+
 ```js
 CKEDITOR.replace(
   "#editor",
@@ -74,7 +81,7 @@ You can change this configuration as many times you want and it will be automati
 When you've changed your configuration in Dashboard once please make sure you updated the API key in your CKEditor configuration like:
 
 ```js
-config.apiKey = "APIKEY12";
+config.apiKey = "...";
 ```
 
 
